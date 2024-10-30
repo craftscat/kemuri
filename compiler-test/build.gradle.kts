@@ -1,9 +1,9 @@
 plugins {
-    kotlin("jvm")
+    alias(libs.plugins.kotlin.jvm)
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
-    testImplementation(kotlin("reflect"))
+    testImplementation(libs.kotlin.test)
+    testImplementation(libs.kotlin.reflect)
     kotlinCompilerPluginClasspath(project(":compiler"))
 }

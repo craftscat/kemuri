@@ -1,7 +1,7 @@
 plugins {
-    kotlin("jvm")
+    alias(libs.plugins.kotlin.jvm)
 }
 
 dependencies {
-    implementation(kotlin("compiler-embeddable"))
+    implementation(libs.kotlin.compiler.embeddable)
 }
